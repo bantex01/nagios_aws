@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# Adding in comment
+# This script will process AWS Cloud Watch metrics from a SQS queue
 
 import sys
 import os
