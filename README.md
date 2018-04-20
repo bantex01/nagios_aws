@@ -43,7 +43,7 @@ https://support.nagios.com/kb/article/nrdp-send_nrdp-client-599.html
 The following configuration is accepted by the script:
 
 [config] 
-sqs_queue = The name of the SQS queue you want to read from
+sqs_queue = The name of the SQS queue you want to read from\n
 num_messages = The number of messages to retrieve in once call
 region_name = The AWS region you want to connect to
 cycle_time = The length of time (in seconds) between polling the queue
