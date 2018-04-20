@@ -56,7 +56,7 @@ If you have configured a CloudWatch alarm to fire on the AWS\SQS metric - Number
 
 
 define host {    
-        use     passive_host  
+        use     passive_host  
         host_name       nagios_alert_q  
         display_name    nagios_alert_q  
         alias           nagios_alert_q  
