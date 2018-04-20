@@ -57,3 +57,18 @@ log_file = The path to the log file for the sqs_process.py
 log_level = The logging level  
 output_method = The output method - either nrdp, log or both  
 output_log = If log method has been selected this is the path to that log  
+
+
+In order to process messages successfully you need to create stanza's for the AWS namepsaces you are intereted in. For example:  
+
+[AWS/ELB]  
+[AWS/SQS]  
+
+Under each stanza you should supply the metric you would like to process and the corresponding Nagios severity.  
+
+Example:  
+
+[AWS/ELB]  
+RequestCount = 2  
+
+This will process all messages from the AWS/ELB namespace and the metric RequestCount, it will send the alert to the NRDP at the Nagios severity level 2 (CRITICAL)
