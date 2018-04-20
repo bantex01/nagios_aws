@@ -55,11 +55,11 @@ Example:
 If you have configured a CloudWatch alarm to fire on the AWS\SQS metric - NumberOfMessagesReceived then the instance that the message comes from will be the QueueName, so your Nagios host definition might look something like this:
 
 ``
-define host {
-        use     passive_host
-        host_name       nagios_alert_q
-        display_name    nagios_alert_q
-        alias           nagios_alert_q
+define host {    
+        use     passive_host  
+        host_name       nagios_alert_q  
+        display_name    nagios_alert_q  
+        alias           nagios_alert_q  
 }
 ``
 
