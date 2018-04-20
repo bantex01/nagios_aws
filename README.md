@@ -42,7 +42,7 @@ https://support.nagios.com/kb/article/nrdp-send_nrdp-client-599.html
 
 ## Nagios Configuration
 
-In order to use NRDP and this script you will need to follow the official Naios documentation on passive host and service definitions which can be found here:
+In order to use NRDP and this script you will need to follow the official Nagios documentation on passive host and service definitions which can be found here:
 
 https://support.nagios.com/kb/article/nrdp-passive-host-and-service-definitions-762.html
 
@@ -62,6 +62,7 @@ define host {
         alias           nagios_alert_q  
 }
 
+NOTE: This can be slightly annoynig when you are creating alarms for volumes as you have to create host definitions for them all!
 
 ## sqs_process.cfg
 
