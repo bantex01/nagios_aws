@@ -1,6 +1,6 @@
 # nagios_aws
 
-This script will read from an SQS queue and send to the Nagios NRDP process or a log file or both.
+This script will read CloudWatch alarms from an SQS queue and send to the Nagios NRDP process or a log file or both.
 
 # Setup
 
@@ -62,7 +62,7 @@ define host {
         alias           nagios_alert_q  
 }
 
-NOTE: This can be slightly annoynig when you are creating alarms for volumes as you have to create host definitions for them all!
+NOTE: This can be slightly annoying when you are creating alarms for volumes as you have to create host definitions for them all!
 
 ## sqs_process.cfg
 
