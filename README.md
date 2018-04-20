@@ -30,7 +30,7 @@ The script assumes AWS credentials have been configured.
 
 ## SQS/SNS
 
-The configuration of CloudWatch alarms to SNS/SQS is a very simple process. CloudWatch alarms need to send the message to an SNS topic. CloudWatch events can be sent straight to a an SQS queue.
+The configuration of CloudWatch alarms to SNS/SQS is a very simple process. CloudWatch alarms need to send the message to an SNS topic. CloudWatch events can be sent straight to an SQS queue.
 
 To create a SNS topic:  
 https://docs.aws.amazon.com/sns/latest/dg/CreateTopic.html  
