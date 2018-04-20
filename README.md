@@ -38,7 +38,7 @@ https://docs.aws.amazon.com/sns/latest/dg/CreateTopic.html
 To create a SQS queue:  
 https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-create-queue.html  
 
-Once you have created the topic and the queue, create a subscription for the queue to the topic. The CloudWatch alarms will then be able to send notification to the topic which the queue is subscribed to by seleting the newly created queue in the alarm actions at creation time.
+Once you have created the topic and the queue, create a subscription for the queue to the topic. The CloudWatch alarms will then be able to send notification to the topic which the queue is subscribed to by selecting the newly created queue in the alarm actions at creation time.
 
 CloudWatch alarms can send alarms directly to the SQS queue by selecting SQS queue as the target. 
 
