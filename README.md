@@ -40,6 +40,29 @@ https://support.nagios.com/kb/article/nrdp-send_nrdp-client-599.html
 
 # Configuration
 
+## Nagios Configuration
+
+In order to use NRDP and this script you will need to follow the official Naios documentation on passive host and service definitions which can be found here:
+
+https://support.nagios.com/kb/article/nrdp-passive-host-and-service-definitions-762.html
+
+Currently the script uses the metric name as the service name it passes to Nagios. This can easily be changed to fit your environment.
+
+It is also worth noting that you will require a Nagios host definition for every type of instance you have configured the script to process.
+
+Example:
+
+If you have configured a CloudWatch alarm to fire on the AWS\SQS metric - NumberOfMessagesReceived then the instance that the message comes from will be the QueueName, so your Nagios host definition might look something like this:
+
+``
+define host {
+        use     passive_host
+        host_name       nagios_alert_q
+        display_name    nagios_alert_q
+        alias           nagios_alert_q
+}
+``
+
 ## sqs_process.cfg
 
 The following configuration is accepted by the script:
