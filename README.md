@@ -71,4 +71,4 @@ Example:
 [AWS/ELB]  
 RequestCount = 2  
 
-This will process all messages from the AWS/ELB namespace and the metric RequestCount, it will send the alert to the NRDP at the Nagios severity level 2 (CRITICAL)
+This will process all messages from the AWS/ELB namespace and the metric RequestCount, it will send the alert to NRDP at the Nagios severity level 2 (CRITICAL)
