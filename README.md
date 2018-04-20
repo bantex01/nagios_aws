@@ -8,8 +8,7 @@ This script will read from an SQS queue and send to the Nagios NRDP process or a
 
 The following python modules are imported:
 
-logging
-
+logging . 
 sys
 
 os
