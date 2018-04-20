@@ -38,6 +38,8 @@ Further information on NRDP can be found here:
 
 https://support.nagios.com/kb/article/nrdp-send_nrdp-client-599.html
 
+# Configuration
+
 ## sqs_process.cfg
 
 The following configuration is accepted by the script:
